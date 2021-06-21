@@ -1,0 +1,239 @@
+/**
+ * Copyright 2021 Ashley L Hines Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:root {
+    --UC-DARK-TEAL: #006c91;
+    --UC-BLUE: #009abc;
+    --UC-HALE-NAVY: #414d61;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: futura-pt, sans-serif;
+    color: white;
+    background-color: var(--UC-HALE-NAVY);
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-areas: "title title" "sidebar content";
+    grid-template-rows: 80px calc(100vh - 80px);
+    grid-template-columns: 0px 1fr;
+    transition: all 0.3s;
+}
+
+.flexbox-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.flexbox-center {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.flexbox-left {
+    display: flex;
+    align-items: center;
+}
+
+.flexbox-left>*,
+.flexbox-right>* {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.title-pipe {
+    padding-right: 25px;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    background-color: var(--UC-DARK-TEAL);
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.UC_SVG {
+    width: 250px;
+    pointer-events: none;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    overflow-x: hidden;
+    background-color: var(--UC-BLUE);
+}
+
+.sidebar a {
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 15px 15px 15px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.sidebar a:hover {
+    background-color: var(--UC-DARK-TEAL);
+}
+
+.sidebar-active {
+    background-color: var(--UC-HALE-NAVY);
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sidebar a span {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a object {
+    padding-right: 10px;
+    width: 30px;
+    pointer-events: none;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    background-color: var(--UC-HALE-NAVY);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-container-no-top {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0px 25px 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-container>* {
+    margin: 0;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.pill {
+    background-color: var(--UC-BLUE);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill-active {
+    background-color: var(--UC-DARK-TEAL);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+.pill-large {
+    background-color: var(--UC-BLUE);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill:hover,
+.pill-large:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.h5 {
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: underline;
+}
