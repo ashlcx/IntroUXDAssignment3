@@ -43,3 +43,7 @@ var selectBookingPill = (id) => {
     console.log(`Changing pill ${id}`)
     document.getElementById(`pill-${id}`).classList.add("pill-active")
 }
+
+var deleteRow = (row) => {
+    document.getElementById(row).remove()
+}

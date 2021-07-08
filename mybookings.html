@@ -46,7 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </div>
         </header>
         <div class="sidebar">
-            <a href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a
+            <a class="active" href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a
         >
         <a href="newbooking.html"
           ><object data="/img/user.svg"></object>New Booking</a
@@ -64,6 +64,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </div>
         <div class="content">
             <div class="content-container">
+                <!--TODO Modal Popup Confirm-->
                 <h1>My Bookings</h1>
                 <h2 class="form-h2 italic">View and Modify your bookings</h2>
                 <h2 class="form-h2">Upcoming bookings</h2>
@@ -80,7 +81,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <th></th>
                         <th></th>
                     </tr>
-                    <tr id="Row1">
+                    <tr id="upcoming-Row1">
                         <td>B3D8464</td>
                         <td>12/07/2021</td>
                         <td>11:00 AM</td>
@@ -90,9 +91,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <td>$12</td>
                         <td>Pending</td>
                         <td>Edit Booking</td>
-                        <td>Cancel Booking</td>
+                        <td class="link" onclick="deleteRow('upcoming-Row1')">Cancel Booking</td>
                     </tr>
-                    <tr id="Row2">
+                    <tr id="upcoming-Row2">
                         <td>B3D8464</td>
                         <td>12/07/2021</td>
                         <td>11:00 AM</td>
@@ -102,9 +103,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <td>$12</td>
                         <td>Pending</td>
                         <td>Edit Booking</td>
-                        <td>Cancel Booking</td>
+                        <td class="link" onclick="deleteRow('upcoming-Row2')">Cancel Booking</td>
                     </tr>
-                    <tr id="Row3">
+                    <tr id="upcoming-Row3">
                         <td>B3D8464</td>
                         <td>12/07/2021</td>
                         <td>11:00 AM</td>
@@ -114,7 +115,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <td>$12</td>
                         <td>Pending</td>
                         <td>Edit Booking</td>
-                        <td>Cancel Booking</td>
+                        <td class="link" onclick="deleteRow('upcoming-Row3')">Cancel Booking</td>
                     </tr>
                 </table>
                 <h2 class="form-h2">Past Bookings</h2>

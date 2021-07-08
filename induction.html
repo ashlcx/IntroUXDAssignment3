@@ -32,24 +32,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div id="grid-wrapper" class="grid-wrapper">
         <header>
             <div class="flexbox-left">
-                <img class="menu-icon" alt="Menu Button" role="button" src="/img/menu.png" onClick="toggleMenu()">
-                <h3>Online Bookings</h3>
+                <img class="menu-icon" alt="Menu Button" role="button" src="/img/menu.png" onClick="toggleMenu()" />
+                <h2>Online Bookings</h2>
             </div>
             <a class="flexbox-center" href="/">
                 <object class="UC_SVG" data="/img/UC.svg"></object>
                 <h2 class="title-pipe">|</h2>
-                <h2>Workshop7</h2>
+                <h1>Workshop7</h1>
             </a>
             <div class="flexbox-right">
-                <h3>Joe Bloggs</h3>
+                <h2>Joe Bloggs</h2>
+                <object data="/img/user.svg"></object>
             </div>
-
-
         </header>
         <div class="sidebar">
             <a href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a>
             <a href="newbooking.html"><object data="/img/user.svg"></object>New Booking</a>
-            <a href="induction.html"><object data="/img/user.svg"></object>Safety Induction</a>
+            <a href="induction.html" class="active"><object data="/img/user.svg"></object>Safety Induction</a>
             <a href="rooms.html"><object data="/img/user.svg"></object>Rooms</a>
             <a href="machines.html"><object data="/img/user.svg"></object>Machines</a>
             <a href="mybookings.html"><object data="/img/user.svg"></object>Staff Approvals</a>
@@ -59,6 +58,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <div class="content">
             <div class="content-container">
                 <h1>Safety Induction Booking</h1>
+                <!--TODO Replace Lorem-->
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo provident laborum quibusdam vitae ex deleniti commodi error voluptate hic culpa harum id, ipsum officia maxime animi! Eveniet illum dolorem magni fugit doloribus ratione
                     pariatur, necessitatibus deleniti adipisci repellat ad reiciendis consectetur enim officia similique sint consequuntur, nisi a temporibus? Molestias deserunt tempore harum reprehenderit cum, ex ipsum eligendi explicabo ab culpa? Assumenda,
                     animi accusamus esse quasi sapiente beatae porro expedita ipsa atque laboriosam earum cum nulla possimus nam fuga sit necessitatibus aliquid provident nisi iusto est, magnam similique. Illo voluptatibus quaerat corporis voluptatum,
@@ -66,8 +66,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     quis voluptatum doloremque aut expedita nobis aliquid fugiat earum aperiam sunt, neque delectus. Sequi distinctio alias eligendi sint accusantium harum fugit, neque voluptate officia molestiae molestias voluptates eum vitae exercitationem,
                     a laudantium suscipit dolorem adipisci? Esse, provident deleniti temporibus fugiat magnam impedit totam dolorem assumenda consequatur sed, pariatur laudantium nobis voluptatibus fugit culpa voluptas illo alias enim tempore eveniet
                     facilis inventore aspernatur. Magni possimus ipsa mollitia temporibus hic quis nesciunt, fuga numquam impedit tempora!</p>
+                <!--TODO Fix Padding-->
                 <div class="form-item">
-                    <label class="form-h2" for="date">Booking Date</label>
+                    <label class="form-h2" for="date">Booking Date</label><br>
                     <input type="date" id="date" name="date">
                 </div>
                 <h2>Available Time Slots</h2>

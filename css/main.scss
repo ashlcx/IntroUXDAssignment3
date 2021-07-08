@@ -1,0 +1,264 @@
+/**
+ * Copyright (c) 2021 Ashley L Hines Pty Ltd
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+//Colours
+$UC-DARK-TEAL: #006c91;
+$UC-BLUE: #009abc;
+$UC-HALE-NAVY: #414d61;
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: futura-pt, sans-serif;
+    color: white;
+    background-color: $UC-HALE-NAVY;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-areas: "title title" "sidebar content";
+    grid-template-rows: 80px calc(100vh - 80px);
+    grid-template-columns: 0px 1fr;
+    transition: all 0.3s;
+}
+
+header {
+    grid-area: title;
+    display: flex;
+    background-color: $UC-DARK-TEAL;
+    .flexbox-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    .flexbox-center {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .flexbox-left {
+        display: flex;
+        align-items: center;
+    }
+    .flexbox-left>*,
+    .flexbox-right>* {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h2 {
+        display: block;
+        font-weight: bold;
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+    }
+    .title-pipe {
+        padding-right: 25px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+    }
+    .menu-icon {
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    .UC_SVG {
+        width: 250px;
+        pointer-events: none;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+    overflow-x: hidden;
+    background-color: $UC-BLUE;
+    a {
+        color: white;
+        border-bottom: 2px solid white;
+        padding: 15px 15px 15px 20px;
+        font-size: 24px;
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+        span {
+            display: flex;
+            align-items: center;
+        }
+        object {
+            padding-right: 10px;
+            width: 30px;
+            pointer-events: none;
+        }
+    }
+    a:hover {
+        background-color: $UC-DARK-TEAL;
+    }
+    .active {
+        background-color: $UC-DARK-TEAL;
+        pointer-events: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    background-color: var(--UC-HALE-NAVY);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    .content-container {
+        width: 100%;
+        max-width: 1000px;
+        padding: 25px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content-home {
+        width: 100%;
+        //padding: 25px;
+        .hero {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 100%;
+            height: 275px;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    .content-container h1,
+    .content-container h2 {
+        margin: 1rem 0px 0.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .home-div {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        column-gap: 50px;
+        grid-template-rows: auto;
+        padding: 0px 25px;
+        h1 {
+            font-size: 2rem;
+            padding: .75rem 0px;
+        }
+    }
+}
+
+@mixin card-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 250px);
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.card-container {
+    @include card-container;
+}
+
+.form-item {
+    padding: 0px 0px .5rem;
+}
+
+.pill {
+    background-color: $UC-BLUE;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill-active {
+    background-color: $UC-DARK-TEAL;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+.pill-large {
+    background-color: $UC-BLUE;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.pill:hover,
+.pill-large:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.form-item {
+    margin: 1rem 0;
+}
+
+.form-h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+table {
+    color: grey;
+    background-color: white;
+}
+
+tr,
+td,
+th {
+    padding: .25rem;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+@import "cards";
