@@ -21,9 +21,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/zwp4tpp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zwp4tpp.css" />
     <link href="/css/main.css" rel="stylesheet" />
-    <link href="/css/image_slider.css" rel="stylesheet" />
+    <link href="/css/card.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="shortcut icon" href="https://www.canberra.edu.au/config/designs/global-combined-parse-squiz/favicon.ico" type="image/ico" />
     <title>Workshop 7 Online Bookings</title>
 </head>
@@ -32,7 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div id="grid-wrapper" class="grid-wrapper">
         <header>
             <div class="flexbox-left">
-                <img class="menu-icon" alt="Menu Button" role="button" src="/img/menu.png" onClick="toggleMenu()">
+                <img class="menu-icon" alt="Menu Button" role="button" src="/img/menu.png" onClick="toggleMenu()" />
                 <h2>Online Bookings</h2>
             </div>
             <a class="flexbox-center" href="/">
@@ -46,17 +47,67 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </div>
         </header>
         <div class="sidebar">
-            <a href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a>
-            <a href="newbooking.html"><object data="/img/user.svg"></object>New Booking</a>
-            <a href="induction.html"><object data="/img/user.svg"></object>Safety Induction</a>
-            <a href="rooms.html"><object data="/img/user.svg"></object>Rooms</a>
-            <a href="machines.html"><object data="/img/user.svg"></object>Machines</a>
-            <a href="mybookings.html"><object data="/img/user.svg"></object>Staff Approvals</a>
-            <a href="#"><object data="/img/user.svg"></object>Logout</a>
+            <a href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a
+        >
+        <a href="newbooking.html"
+          ><object data="/img/user.svg"></object>New Booking</a
+        >
+        <a href="induction.html"
+          ><object data="/img/user.svg"></object>Safety Induction</a
+        >
+        <a href="rooms.html"><object data="/img/user.svg"></object>Rooms</a>
+            <a href="machines.html"><object data="/img/user.svg"></object>Machines</a
+        >
+        <a href="mybookings.html"
+          ><object data="/img/user.svg"></object>Staff Approvals</a
+        >
+        <a href="#"><object data="/img/user.svg"></object>Logout</a>
         </div>
         <div class="content">
-            <div class="content-container">
-                <h1>Hello World</h1>
+            <div class="content-home">
+                <div class="home-div">
+                    <div class="home-favourites">
+                        <h1>Favourites</h1>
+                        <div class="card-container-favourites">
+                            <div class="card-small">
+                                <img src="https://www.highcrossdesigns.com/wp-content/uploads/2019/05/rsz_adobestock_254605585_1.jpg" alt="">
+                                <h2>CNC Router</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga.</p>
+                            </div>
+                            <div class="card-small">
+                                <img src="https://www.highcrossdesigns.com/wp-content/uploads/2019/05/rsz_adobestock_254605585_1.jpg" alt="">
+                                <h2>CNC Router</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-popular">
+                        <h1>Popular</h1>
+                        <div class="card-container-favourites">
+                            <div class="card-large">
+                                <img src="https://www.highcrossdesigns.com/wp-content/uploads/2019/05/rsz_adobestock_254605585_1.jpg" alt="">
+                                <h2>CNC Router</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga.</p>
+                            </div>
+                            <div></div>
+                            <div class="card-small">
+                                <img src="https://www.highcrossdesigns.com/wp-content/uploads/2019/05/rsz_adobestock_254605585_1.jpg" alt="">
+                                <h2>CNC Router</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga.</p>
+                            </div>
+                            <div class="card-small">
+                                <img src="https://www.highcrossdesigns.com/wp-content/uploads/2019/05/rsz_adobestock_254605585_1.jpg" alt="">
+                                <h2>CNC Router</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga.</p>
+                            </div>
+                            <div class="card-small">
+                                <img src="https://www.highcrossdesigns.com/wp-content/uploads/2019/05/rsz_adobestock_254605585_1.jpg" alt="">
+                                <h2>CNC Router</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fuga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

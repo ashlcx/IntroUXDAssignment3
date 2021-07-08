@@ -216,6 +216,11 @@ header a {
     margin-left: auto;
 }
 
+.content-home {
+    width: 100%;
+    padding: 25px;
+}
+
 .content-container-no-top {
     width: 100%;
     max-width: 1000px;
@@ -231,6 +236,10 @@ header a {
 .content-container h1,
 .content-container h2 {
     margin: 1rem 0px 0.5rem;
+}
+
+.form-item {
+    padding: 0px 0px .5rem;
 }
 
 .pill {
@@ -288,5 +297,24 @@ header a {
 }
 
 .form-h2 {
-    font-size: 1.25em;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+table {
+    color: grey;
+    background-color: white;
+}
+
+tr,
+td,
+th {
+    padding: .25rem;
+    border-radius: 12px;
+    border: 1px solid black;
 }

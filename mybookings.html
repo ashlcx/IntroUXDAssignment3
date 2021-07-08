@@ -21,49 +21,153 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/zwp4tpp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zwp4tpp.css" />
     <link href="/css/main.css" rel="stylesheet" />
     <link href="/css/image_slider.css" rel="stylesheet" />
     <link rel="shortcut icon" href="https://www.canberra.edu.au/config/designs/global-combined-parse-squiz/favicon.ico" type="image/ico" />
-    <title>Workshop 7 Online Bookings</title>
+    <title>Workshop 7 - My Bookings</title>
 </head>
 
 <body>
     <div id="grid-wrapper" class="grid-wrapper">
-        <div class="title">
+        <header>
             <div class="flexbox-left">
-                <img class="menu-icon" alt="Menu Button" role="button" src="/img/menu.png" onClick="toggleMenu()">
-                <h3>Online Bookings</h3>
+                <img class="menu-icon" alt="Menu Button" role="button" src="/img/menu.png" onClick="toggleMenu()" />
+                <h2>Online Bookings</h2>
             </div>
             <a class="flexbox-center" href="/">
                 <object class="UC_SVG" data="/img/UC.svg"></object>
                 <h2 class="title-pipe">|</h2>
-                <h2>Workshop7</h2>
+                <h1>Workshop7</h1>
             </a>
             <div class="flexbox-right">
-                <h3>Joe Bloggs</h3>
+                <h2>Joe Bloggs</h2>
+                <object data="/img/user.svg"></object>
             </div>
-
-
-        </div>
+        </header>
         <div class="sidebar">
-            <a href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a>
-            <a href="newbooking.html"><object data="/img/user.svg"></object>New Booking</a>
-            <a href="induction.html"><object data="/img/user.svg"></object>Safety Induction</a>
-            <a href="rooms.html"><object data="/img/user.svg"></object>Rooms</a>
-            <a href="machines.html"><object data="/img/user.svg"></object>Machines</a>
-            <a href="mybookings.html"><object data="/img/user.svg"></object>Staff Approvals</a>
-            <a href="#"><object data="/img/user.svg"></object>Logout</a>
-
+            <a href="mybookings.html"><object data="/img/user.svg"></object>My Bookings</a
+        >
+        <a href="newbooking.html"
+          ><object data="/img/user.svg"></object>New Booking</a
+        >
+        <a href="induction.html"
+          ><object data="/img/user.svg"></object>Safety Induction</a
+        >
+        <a href="rooms.html"><object data="/img/user.svg"></object>Rooms</a>
+            <a href="machines.html"><object data="/img/user.svg"></object>Machines</a
+        >
+        <a href="mybookings.html"
+          ><object data="/img/user.svg"></object>Staff Approvals</a
+        >
+        <a href="#"><object data="/img/user.svg"></object>Logout</a>
         </div>
         <div class="content">
             <div class="content-container">
                 <h1>My Bookings</h1>
-                <h2 class="italic">View and Modify your bookings</h2>
-                <h2>Upcoming Bookings</h2>
-                <h3>Placeholder Table</h3>
-                <h2>Past Bookings</h2>
-                <h3>Placeholder Table</h3>
+                <h2 class="form-h2 italic">View and Modify your bookings</h2>
+                <h2 class="form-h2">Upcoming bookings</h2>
+                <table id="UpcomingBookings">
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Booking Date</th>
+                        <th>Booking Start Time</th>
+                        <th>Booking End Time</th>
+                        <th>Room</th>
+                        <th>Machine</th>
+                        <th>Estimated Cost</th>
+                        <th>Staff Approval</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr id="Row1">
+                        <td>B3D8464</td>
+                        <td>12/07/2021</td>
+                        <td>11:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>-</td>
+                        <td>3D Printer</td>
+                        <td>$12</td>
+                        <td>Pending</td>
+                        <td>Edit Booking</td>
+                        <td>Cancel Booking</td>
+                    </tr>
+                    <tr id="Row2">
+                        <td>B3D8464</td>
+                        <td>12/07/2021</td>
+                        <td>11:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>-</td>
+                        <td>3D Printer</td>
+                        <td>$12</td>
+                        <td>Pending</td>
+                        <td>Edit Booking</td>
+                        <td>Cancel Booking</td>
+                    </tr>
+                    <tr id="Row3">
+                        <td>B3D8464</td>
+                        <td>12/07/2021</td>
+                        <td>11:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>-</td>
+                        <td>3D Printer</td>
+                        <td>$12</td>
+                        <td>Pending</td>
+                        <td>Edit Booking</td>
+                        <td>Cancel Booking</td>
+                    </tr>
+                </table>
+                <h2 class="form-h2">Past Bookings</h2>
+                <table id="UpcomingBookings">
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Booking Date</th>
+                        <th>Booking Start Time</th>
+                        <th>Booking End Time</th>
+                        <th>Room</th>
+                        <th>Machine</th>
+                        <th>Estimated Cost</th>
+                        <th>Staff Approval</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr id="Row1">
+                        <td>B3D8464</td>
+                        <td>12/07/2021</td>
+                        <td>11:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>-</td>
+                        <td>3D Printer</td>
+                        <td>$12</td>
+                        <td>Pending</td>
+                        <td>Edit Booking</td>
+                        <td>Cancel Booking</td>
+                    </tr>
+                    <tr id="Row2">
+                        <td>B3D8464</td>
+                        <td>12/07/2021</td>
+                        <td>11:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>-</td>
+                        <td>3D Printer</td>
+                        <td>$12</td>
+                        <td>Pending</td>
+                        <td>Edit Booking</td>
+                        <td>Cancel Booking</td>
+                    </tr>
+                    <tr id="Row3">
+                        <td>B3D8464</td>
+                        <td>12/07/2021</td>
+                        <td>11:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>-</td>
+                        <td>3D Printer</td>
+                        <td>$12</td>
+                        <td>Pending</td>
+                        <td>Edit Booking</td>
+                        <td>Cancel Booking</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
