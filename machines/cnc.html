@@ -14,6 +14,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +24,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/zwp4tpp.css" />
     <link href="/css/main.css" rel="stylesheet" />
-    <link href="/css/image_slider.css" rel="stylesheet" />
     <link rel="shortcut icon" href="https://www.canberra.edu.au/config/designs/global-combined-parse-squiz/favicon.ico" type="image/ico" />
     <title>Workshop 7 Online Bookings</title>
 </head>
@@ -51,7 +51,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <a href="/newbooking.html"
           ><object data="/img/user.svg"></object>New Booking</a
         >
-        <a href="/induction.html" class="active"
+        <a href="/induction.html"
           ><object data="/img/user.svg"></object>Safety Induction</a
         >
         <a href="/rooms"><object data="/img/user.svg"></object>Rooms</a>
@@ -59,49 +59,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
             <a href="https://www.canberra.edu.au/"><object data="/img/user.svg"></object>Logout</a>
         </div>
-
         <div class="content">
-            <div class="content-container">
-                <h1>Safety Induction Booking</h1>
-                <p>
-                    In order to use Workshop7, You first require to be safety inducted. This in addition to terms and conditions protects you and The University of Canberra incase accidents happen. You will be shown how to use commonly used machines and shown all required
-                    safety points. Without completing induction, bookings will be denied, if you have already been inducted before this system this is not required.
-                </p>
-                <form action="/mybookings.html">
-                    <div class="form-item">
-                        <label class="form-h2" for="date">Booking Date</label><br />
-                        <input type="date" id="date" name="date" />
+            <div class="content-home">
+                <img src="https://bgprecision.com.au/wp-content/uploads/0020-IMG_1302-Small-600x401.png" alt="Placeholder" class="hero" />
+
+                <div class="machine-room-div">
+                    <div><img class="calendar-img" src="/img/calendar.png" alt="">
+                        <h2>No Bookings on this date</h3>
                     </div>
-                    <h2 class="form-h2">Available Time Slots</h2>
-                    <div class="form-item">
-                        <button id="pill-1" class="pill" onclick="selectBookingPill(1)">
-              09:00-10:00
-            </button>
-                        <button id="pill-2" class="pill" onclick="selectBookingPill(2)">
-              10:00-11:00
-            </button>
-                        <button id="pill-3" class="pill" onclick="selectBookingPill(3)">
-              11:00-12:00
-            </button>
-                        <button id="pill-4" class="pill" onclick="selectBookingPill(4)">
-              12:00-01:00
-            </button>
-                        <button id="pill-5" class="pill" onclick="selectBookingPill(5)">
-              01:00-02:00
-            </button>
-                        <button id="pill-6" class="pill" onclick="selectBookingPill(6)">
-              02:00-03:00
-            </button>
+                    <div>
+                        <h1>
+                            <span onclick="window.history.back()">&lt;</span> CNC Machine
+                        </h1>
+                        <p>
+                            A Cnc router allows you to cutout metal, wood, vinyl and leather out to spec.
+                        </p>
                     </div>
-                    <input type="checkbox" id="terms" name="terms" />
-                    <label class="h5" for="terms">I Agree to the UC Workshop7
-            <span class="link">Terms and Conditions</span></label
-          ><br />
-          <button class="pill-large form-item">Submit</button>
-        </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <script src="/js/bundle.js"></script>
-  </body>
+</body>
+
 </html>

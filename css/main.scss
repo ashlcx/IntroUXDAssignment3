@@ -178,7 +178,7 @@ header {
                 justify-self: end;
                 margin: 1rem 0px 0.5rem;
                 input {
-                    margin-right: 1rem;
+                    margin-left: 1rem;
                     border-radius: 1rem;
                     width: 30ch;
                     height: 2rem;
@@ -282,6 +282,22 @@ th {
     a {
         color: grey;
     }
+}
+
+.machine-room-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    grid-template-rows: auto;
+    padding: 0px 25px;
+    h1 {
+        padding: .75rem 0px;
+    }
+}
+
+.calendar-img {
+    width: 100%;
+    height: auto
 }
 
 @import "cards";

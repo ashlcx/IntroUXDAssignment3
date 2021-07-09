@@ -240,7 +240,7 @@ header .UC_SVG {
 }
 
 .content .rooms-machine-page .head .search input {
-  margin-right: 1rem;
+  margin-left: 1rem;
   border-radius: 1rem;
   width: 30ch;
   height: 2rem;
@@ -349,6 +349,27 @@ tr a,
 td a,
 th a {
   color: grey;
+}
+
+.machine-room-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 0px 25px;
+}
+
+.machine-room-div h1 {
+  padding: .75rem 0px;
+}
+
+.calendar-img {
+  width: 100%;
+  height: auto;
 }
 
 .card-small {
