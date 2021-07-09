@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <link rel="stylesheet" href="https://use.typekit.net/zwp4tpp.css" />
     <link href="/css/main.css" rel="stylesheet" />
     <link rel="shortcut icon" href="https://www.canberra.edu.au/config/designs/global-combined-parse-squiz/favicon.ico" type="image/ico" />
-    <title>Workshop 7 - New Booking</title>
+    <title>Workshop 7 - Machines</title>
 </head>
 
 <body>
@@ -53,32 +53,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <a href="induction.html"
           ><object data="/img/user.svg"></object>Safety Induction</a
         >
-        <a href="rooms.html"><object data="/img/user.svg"></object>Rooms</a>
-            <a href="machines.html"><object data="/img/user.svg"></object>Machines</a
-        >
-        <a href="mybookings.html"
-          ><object data="/img/user.svg"></object>Staff Approvals</a
+        <a href="/rooms"><object data="/img/user.svg"></object>Rooms</a>
+            <a href="/machines"><object data="/img/user.svg"></object>Machines</a>
+            <a href="mybookings.html"><object data="/img/user.svg"></object>Staff Approvals</a
         >
         <a href="#"><object data="/img/user.svg"></object>Logout</a>
         </div>
         <div class="content">
-            <div class="content-container">
-                <label for="room-machine-input">Room/MachineID</label>
-                <input id="room-machine-input" type="text">
-                <label for="booking-date">Booking Date</label>
-                <input type="date" name="date" id="date">
-                <label for="length">Desired Booking Length</label>
-                <select name="length" id="length"></select>
-                <label for="booking-type">Booking Type</label>
-                <input type="radio" name="booking-type" id="booking-type">
-                <h2>Estimated Cost</h2>
-                <p> - $12.50</p>
-                <label for="staff-approval">Staff Approval</label>
-                <input type="checkbox" name="staff-approval" id="staff-approval">
-                <label for="terms">Terms and Conditions</label>
-                <input type="checkbox" name="terms" id="terms">
-                <label for="caveats">Caveats</label>
-                <input type="checkbox" name="caveats" id="caveats">
+            <div class="content-container rooms-machine-page">
+                <!--TODO Add Cards-->
+                <h1>Our Machines</h1>
+                <input type="search" class="search" name="search" id="search" />
+                <h2>Favourites</h2>
+                <div class="card-container"></div>
+                <h2>Popular</h2>
+                <div class="card-container"></div>
+                <h2>All</h2>
+                <div class="card-container"></div>
             </div>
         </div>
     </div>
