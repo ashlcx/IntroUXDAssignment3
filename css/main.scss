@@ -155,6 +155,11 @@ header {
         font-size: 2rem;
         font-weight: bold;
     }
+    h2,
+    .form-h2 {
+        font-weight: normal;
+        font-size: 1.5em;
+    }
     .home-div {
         display: grid;
         grid-template-columns: 250px 1fr;
@@ -162,13 +167,31 @@ header {
         grid-template-rows: auto;
         padding: 0px 25px;
         h1 {
-            font-size: 2rem;
             padding: .75rem 0px;
+        }
+    }
+    .rooms-machine-page {
+        .head {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .search {
+                justify-self: end;
+                margin: 1rem 0px 0.5rem;
+                input {
+                    margin-right: 1rem;
+                    border-radius: 1rem;
+                    width: 30ch;
+                    height: 2rem;
+                }
+            }
+        }
+        h2 {
+            font-size: 2rem;
         }
     }
 }
 
-@mixin card-container {
+.card-container {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fill, 250px);
@@ -176,12 +199,13 @@ header {
     column-gap: 25px;
 }
 
-.card-container {
-    @include card-container;
-}
-
 .form-item {
     padding: 0px 0px .5rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
 }
 
 .pill {
@@ -237,11 +261,6 @@ header {
 
 .form-item {
     margin: 1rem 0;
-}
-
-.form-h2 {
-    font-weight: normal;
-    font-size: 1.5em;
 }
 
 .italic {
