@@ -45,5 +45,10 @@ var selectBookingPill = (id) => {
 }
 
 var deleteRow = (row) => {
-    document.getElementById(row).remove()
+    var answer = window.confirm("Are you sure you want to cancel? this booking?");
+    if (answer) {
+        document.getElementById(row).remove()
+    }
+
+
 }

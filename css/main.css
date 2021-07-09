@@ -284,6 +284,7 @@ header .UC_SVG {
 
 .link {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .form-item {
@@ -311,6 +312,12 @@ th {
   padding: .25rem;
   border-radius: 12px;
   border: 1px solid black;
+}
+
+tr a,
+td a,
+th a {
+  color: grey;
 }
 
 .card-small {
