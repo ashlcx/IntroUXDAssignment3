@@ -13,31 +13,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-TODO 
-Error: No space between attributes.
-
-At line 129, column 33
-
- type="submit "class="pill-lar
-
-Error: Bad value submit  for attribute type on element button.
-
-From line 129, column 11; to line 129, column 61
-
-          <button type="submit "class="pill-large form-item">Submit
-
-Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
-
-From line 71, column 29; to line 71, column 70
-
-          <label class="form-h2" for="booking-date">Bookin
-
-Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
-
-From line 88, column 29; to line 88, column 70
-
-          <label class="form-h2" for="booking-type">Bookin
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +69,7 @@ From line 88, column 29; to line 88, column 70
                         </div>
                         <div>
                             <label class="form-h2" for="booking-date">Booking Date</label>
-                            <input type="date" name="date" id="date" />
+                            <input type="date" name="date" id="booking-date" />
                         </div>
                         <div>
                             <label class="form-h2" for="length">Desired Booking Length</label>
@@ -110,7 +85,7 @@ From line 88, column 29; to line 88, column 70
                             </select>
                         </div>
                         <div>
-                            <label class="form-h2" for="booking-type">Booking Type</label>
+                            <p class="form-h2">Booking Type</p>
                             <br>
                             <input type="radio" name="booking-type" id="booking-personal" /><label for="booking-personal">Personal</label>
                             <input type="radio" name="booking-type" id="booking-course" /><label for="booking-course">Course Related</label>
@@ -151,7 +126,7 @@ From line 88, column 29; to line 88, column 70
             for="caveats"
             >Different Caveats for a machine would go down here.</label
           ><br>
-          <button type="submit "class="pill-large form-item">Submit</button>
+          <button type="submit" class="pill-large form-item">Submit</button>
         </form>
         </div>
       </div>
